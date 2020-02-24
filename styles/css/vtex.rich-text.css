@@ -10,6 +10,10 @@
   text-align: center;
 }
 
+.paragraph--menuItem {
+  margin: 0;
+}
+
 .headingLevel2--shelfTitle {
   font-weight: 200;
 }

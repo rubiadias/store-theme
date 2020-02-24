@@ -120,15 +120,47 @@
   "drawer": {
     "children": ["menu#drawer"]
   },
+  "drawer#test": {
+    "props": {
+      "blockClass": "menuItem"
+    },
+    "children": ["menu#drawer-test"],
+    "blocks": ["drawer-open-trigger"]
+  },
 
   "menu#drawer": {
     "children": [
       "menu-item#category-apparel",
       "menu-item#category-home",
-      "menu-item#more"
+      "menu-item#more",
+      "menu-item#test"
     ],
     "props": {
       "orientation": "vertical"
+    }
+  },
+  "menu#drawer-test": {
+    "children": ["menu-item#category-home"],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#test": {
+    "props": {
+      "id": "menu-item-test",
+      "type": "category",
+      "iconId": null,
+      "highlight": false
+    },
+    "children": ["drawer#test"]
+  },
+  "drawer-open-trigger": {
+    "children": ["rich-text#drawer-trigger"]
+  },
+  "rich-text#drawer-trigger": {
+    "props": {
+      "text": "Open drawer",
+      "blockClass": "menuItem"
     }
   },
 
