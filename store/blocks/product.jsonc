@@ -95,7 +95,7 @@
   "product-gifts": {
     "props": {
       "maxVisibleItems": {
-        "desktop": 2,
+        "desktop": 1,
         "mobile": 1
       }
     },
@@ -126,7 +126,8 @@
   },
   "gift-text": {
     "props": {
-      "translatableText": "{exceedingItems, plural, =0{} one {+ # gift} other {+ # gifts}}"
+      "blockClass": "default",
+      "text": "{exceedingItems, plural, =0{} one {+ # gift} other {+ # gifts}}"
     }
   },
   "product-gift-list": {
